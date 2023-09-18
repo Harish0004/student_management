@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "id": 3,
+      "rollno": "21cos16",
+      "name": "Harish V",
+      "dept": "computer "
+    },
+    {
+      "id": 4,
+      "name": "jerome",
+      "rollno": "21cos32",
+      "dept": "computer science"
+    },
+    {
+      "id": 5,
+      "name": "Issac",
+      "rollno": "21cos09",
+      "dept": "computer science"
+    },
+    {
+      "id": 6,
+      "name": "Thayaneswaran",
+      "rollno": "21cos53",
+      "dept": "computer science"
+    },
+    {
+      "id": 7,
+      "name": "hari",
+      "rollno": "21cos14",
+      "dept": "computer science"
+    }
+  ]
+}

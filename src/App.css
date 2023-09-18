@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#first{
+  background-color: aqua;
+  margin: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  padding-left: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#second{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  background-color:black;
+  width: 100%;
+  height: 130px;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#second h1{
+  display: block;
+}
+#second ul{
+    list-style: none;
+    margin-right: 140px;
+}
+#second ul li{
+    display: inline;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+}
+
+#second input{
+  margin-left: 120px;
+  padding: 16px;
+  width: 380px;
+  font-size: 28px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+article{
+  background-color: rgb(202, 191, 191);
+  margin: 30px;
+  padding: 20px;
+  line-height: 49px;
+  color: black;
+  text-decoration: none;
+}
+
+.NewItems{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 30px;
+}
+
+.NewItems input{
+  width: 340px;
+  padding: 22px;
+  margin: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ button{
+  background-color: green;
+  width: 250px;
+  padding: 20px;
+  font-size: 24px;
+  margin: 20px;
   color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+#delete{
+  background-color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+article h1,h2,h3{
+  text-decoration: none;
+  color: black;
 }

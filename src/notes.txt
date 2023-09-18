@@ -1,0 +1,60 @@
+Header 
+
+  header will contain two component one is for search and another for navigation
+
+  Home is the default page for this App
+
+  this will check does the array having data if it having some it will  pass the value to the list or it will print no post to display
+
+  The list will map all the students details to the items component
+
+  the item component displays all the details of the student and they act as the link for the full view(editing,deleting)
+
+  when the list is clicked the it will go inside the  students  component and the student component will display all 
+  the information and two buttons delete and edit button.
+
+  when it enters the students component it will find the student which is clicked by comparing the id of each and finds
+  which is clicked and then it will display only that record.
+
+
+  when the delete button is clicked it will calls the handledelete function
+
+  handledelete function is written in the app.js component. it uses the filter function to remove the student and store 
+  the other students in a new array. Then use the new array to setStudents hook.
+
+                                                  Add records
+
+The add record navigates to the add.js. it contains a form the form will ask you to fill the details of the student.When submit
+button is clicked it will calls the handlesubmit function. every input filed uses the onchange attribute to set the value 
+in their hooks.
+
+handlesubmit written in the app.js. the handlesubmit function first generates a unique id for the student. Then all the details
+of the new student is stored in a new object. then that is used to update the setStudents hook.
+
+                                               Edit post
+
+for editing a post first we have to create three usestate for rollno,name and department. If we want to edit the student record
+we have to click the edit button which was inside the student component. so we have to use the link tag and write the button
+inside the link tag and then give the router path in the app component. the edit button will lead to the edit component. it has 
+the same interface link the addpost. it will show the existing details of the student.
+
+we have to pass all the three usestate and the handleedit function and the students list. in the edit component we have to use 
+the useeffect to set the default values of the input fields as the existing student details. after making changes click the button 
+it will call the handleEdit function.
+
+the handleEdit function will save the new details in a new object and using the map function the function is joined in the students 
+by using the usestate
+
+
+
+                                              json-server
+
+create a api folder in the src folder. within the folder create a file with .js extension. mention the base url and export it,
+import the api in the app component.
+
+                                                 data
+
+create a data folder outside the src folder. create a file named db.json in the data folder and intilize the json server
+
+
+
